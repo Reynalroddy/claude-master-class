@@ -15,3 +15,13 @@
 svg.logo {
   display: inline-block;
 }
+
+.createBtn {
+  @apply inline-flex items-center gap-1 px-2 py-1 rounded-[12px] text-xs font-bold transition-colors whitespace-nowrap;
+  background-color: #eb1b00;
+  color: #fde8e5;
+}
+
+.createBtn:hover {
+  background-color: #c91500;
+}

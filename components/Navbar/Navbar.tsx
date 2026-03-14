@@ -1,6 +1,6 @@
-import { Clock8 } from "lucide-react"
-import Link from "next/link"
-import styles from "./Navbar.module.css"
+import { Clock8, TriangleAlert } from "lucide-react";
+import Link from "next/link";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   return (
@@ -17,10 +17,13 @@ export default function Navbar() {
         </header>
         <ul>
           <li>
-            <Link href="/heists/create" className="btn">Create Heist</Link>
+            <Link href="/heists/create" className={styles.createBtn}>
+              <TriangleAlert size={16} className="text-white" />
+              Create Heist master-class
+            </Link>
           </li>
         </ul>
       </nav>
     </div>
-  )
+  );
 }
